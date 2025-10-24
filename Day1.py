@@ -3,7 +3,7 @@ print("hello world")
 
 print("my is roll no is 300")
 print("my is section id b")
-print("my college name acharya instituete of technology")
+print("my college name acharya institute of technology")
 a=int(input("enter the value of a "))
 b=int(input("enter the value of b "))
 sum=a+b
