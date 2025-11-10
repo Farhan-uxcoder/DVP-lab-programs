@@ -14,7 +14,6 @@ def count_digits(number):
         digits_count[digit] += 1
         number //= 10
     return digits_count  # Moved outside the while loop
-
 try:
     num = int(input("Enter a positive integer: "))
     if num < 0:
