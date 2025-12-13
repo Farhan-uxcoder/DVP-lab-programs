@@ -15,7 +15,6 @@ plt.scatter(
     edgecolors='b',
     marker='*'   # ⭐ star marker
 )
-
 plt.xlabel("chocolates price", fontsize=15)
 plt.ylabel("sales per day", fontsize=15)
 plt.xticks(price)
