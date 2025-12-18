@@ -10,3 +10,4 @@ plt.xlabel("Day of the week")
 plt.ylabel("Day of the week")
 
 plt.show()
+print(data)
