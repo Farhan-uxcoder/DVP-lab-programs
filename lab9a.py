@@ -1,28 +1,24 @@
-import plotly.graph_objects as go
-import plotly.io as pio
-import numpy as np
-import webbrowser
+import plotly.express as px
 
+# Load the Iris dataset
+df = px.data.iris()
 
-# Force Plotly to use browser renderer
-pio.renderers.default = "browser"   # or "vscode" if you have Jupyter extension
+# Create a 3D scatter plot
+fig = px.scatter_3d(
+    df,
+    x="petal_length",
+    y="petal_width",
+    z="sepal_length",
+    color="species",
+    title="3D Scatter Plot of Iris Dataset"
+)
 
-# Generate random data
-np.random.seed(42)
-x = np.random.randn(100)
-y = np.random.randn(100)
-z = np.random.randn(100)
-
-scatter3d = go.Scatter3d(
-    x=x, y=y, z=z,
-    mode='markers',
-    marker=dict(
-        size=5,
-        color=z,
-        colorscale='Viridis',
-        opacity=0.8
+fig.update_layout(
+    scene=dict(
+        xaxis_title="Petal Length",
+        yaxis_title="Petal Width",
+        zaxis_title="Sepal Length"
     )
 )
 
-fig = go.Figure(data=[scatter3d])
 fig.show()
