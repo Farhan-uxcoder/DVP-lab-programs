@@ -1,11 +1,9 @@
 import matplotlib.pyplot as plt
 
+categories = ["maths","science","social"]
+value = [100,78,56]
 
-categories = ["Science", "Commerce", "Arts","Literature"]
-value = [12,25,15,30]
-
-plt.bar(categories,value,color='c')
-plt.xlabel("Categories")
-plt.ylabel("Value")
-plt.title("Bar plot example")
+plt.bar(categories,value)
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
 plt.show()
