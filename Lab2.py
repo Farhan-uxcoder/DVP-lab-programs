@@ -1,7 +1,7 @@
 def fib(n):
     a=0
     b=1
-    if n==1:
+    if n<=0:
         print("invalid input")
     elif n==1:
         print(a)
