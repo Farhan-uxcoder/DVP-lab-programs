@@ -7,8 +7,8 @@ c = 5
 x = np.arange(-4, 4)
 y = np.arange(-4, 4)
 
-plt.axvline(color='g')
-plt.axhline(color='g')
+plt.axvline()
+plt.axhline()
 
 plt.title("Linear plotting")
 plt.xlabel("X-axis")
